@@ -13,5 +13,7 @@ RUN pip3 install -r requirements.txt
 # Copy the files
 COPY . .
 
+EXPOSE 8080
+
 # Executable commands
 CMD [ "python3", "-m" , "main", "run", "--host=0.0.0.0"]

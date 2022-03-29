@@ -1,5 +1,3 @@
-
-
 from email.policy import HTTP
 from genericpath import exists
 from itertools import count
@@ -47,7 +45,7 @@ class Cliente(BaseModel):
     curriculo: str
    
 class Clientes(BaseModel):
-    #clientes: list[Cliente]
+    clientes: list[Cliente]
     count: int
 
 @server.get("/clientes") #Estabelecendo a rota do servidor com o metodo GET
